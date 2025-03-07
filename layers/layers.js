@@ -7,7 +7,7 @@ var wms_layers = [];
             
             
             source: new ol.source.XYZ({
-            attributions: ' &middot; <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
+            attributions: ' &nbsp &middot; <a href="https://www.google.at/permissions/geoguidelines/attr-guide.html">Map data ©2015 Google</a>',
                 url: 'https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'
             })
         });
@@ -18,7 +18,7 @@ var wms_layers = [];
             
             
             source: new ol.source.XYZ({
-            attributions: ' &middot; <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
+            attributions: ' &nbsp &middot; <a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
                 url: 'http://tile.openstreetmap.org/{z}/{x}/{y}.png'
             })
         });
@@ -67,264 +67,246 @@ var lyr_SOLANEPhase2Grids_4 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/SOLANEPhase2Grids_4.png" /> SOLANE Phase 2 Grids'
             });
-var format_SOLANEAllChannelsFinalPh2_5 = new ol.format.GeoJSON();
-var features_SOLANEAllChannelsFinalPh2_5 = format_SOLANEAllChannelsFinalPh2_5.readFeatures(json_SOLANEAllChannelsFinalPh2_5, 
+var format_SOLANEAllChannelsFinalPhase2_5 = new ol.format.GeoJSON();
+var features_SOLANEAllChannelsFinalPhase2_5 = format_SOLANEAllChannelsFinalPhase2_5.readFeatures(json_SOLANEAllChannelsFinalPhase2_5, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_SOLANEAllChannelsFinalPh2_5 = new ol.source.Vector({
+var jsonSource_SOLANEAllChannelsFinalPhase2_5 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_SOLANEAllChannelsFinalPh2_5.addFeatures(features_SOLANEAllChannelsFinalPh2_5);
-var lyr_SOLANEAllChannelsFinalPh2_5 = new ol.layer.Vector({
+jsonSource_SOLANEAllChannelsFinalPhase2_5.addFeatures(features_SOLANEAllChannelsFinalPhase2_5);
+var lyr_SOLANEAllChannelsFinalPhase2_5 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_SOLANEAllChannelsFinalPh2_5, 
-                style: style_SOLANEAllChannelsFinalPh2_5,
-                popuplayertitle: 'SOLANE All Channels Final Ph2',
+                source:jsonSource_SOLANEAllChannelsFinalPhase2_5, 
+                style: style_SOLANEAllChannelsFinalPhase2_5,
+                popuplayertitle: 'SOLANE All Channels Final Phase 2',
                 interactive: true,
-                title: '<img src="styles/legend/SOLANEAllChannelsFinalPh2_5.png" /> SOLANE All Channels Final Ph2'
+                title: '<img src="styles/legend/SOLANEAllChannelsFinalPhase2_5.png" /> SOLANE All Channels Final Phase 2'
             });
-var format_PATEROSPACI_6 = new ol.format.GeoJSON();
-var features_PATEROSPACI_6 = format_PATEROSPACI_6.readFeatures(json_PATEROSPACI_6, 
+var format_PATEROS_6 = new ol.format.GeoJSON();
+var features_PATEROS_6 = format_PATEROS_6.readFeatures(json_PATEROS_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_PATEROSPACI_6 = new ol.source.Vector({
+var jsonSource_PATEROS_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_PATEROSPACI_6.addFeatures(features_PATEROSPACI_6);
-var lyr_PATEROSPACI_6 = new ol.layer.Vector({
+jsonSource_PATEROS_6.addFeatures(features_PATEROS_6);
+var lyr_PATEROS_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_PATEROSPACI_6, 
-                style: style_PATEROSPACI_6,
-                popuplayertitle: 'PATEROS PACI',
+                source:jsonSource_PATEROS_6, 
+                style: style_PATEROS_6,
+                popuplayertitle: 'PATEROS',
                 interactive: true,
-                title: '<img src="styles/legend/PATEROSPACI_6.png" /> PATEROS PACI'
+                title: '<img src="styles/legend/PATEROS_6.png" /> PATEROS'
             });
-var format_PASIGPACI_7 = new ol.format.GeoJSON();
-var features_PASIGPACI_7 = format_PASIGPACI_7.readFeatures(json_PASIGPACI_7, 
+var format_PASIG_7 = new ol.format.GeoJSON();
+var features_PASIG_7 = format_PASIG_7.readFeatures(json_PASIG_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_PASIGPACI_7 = new ol.source.Vector({
+var jsonSource_PASIG_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_PASIGPACI_7.addFeatures(features_PASIGPACI_7);
-var lyr_PASIGPACI_7 = new ol.layer.Vector({
+jsonSource_PASIG_7.addFeatures(features_PASIG_7);
+var lyr_PASIG_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_PASIGPACI_7, 
-                style: style_PASIGPACI_7,
-                popuplayertitle: 'PASIG PACI',
+                source:jsonSource_PASIG_7, 
+                style: style_PASIG_7,
+                popuplayertitle: 'PASIG',
                 interactive: true,
-                title: '<img src="styles/legend/PASIGPACI_7.png" /> PASIG PACI'
+                title: '<img src="styles/legend/PASIG_7.png" /> PASIG'
             });
-var format_VALENZUELADDC_8 = new ol.format.GeoJSON();
-var features_VALENZUELADDC_8 = format_VALENZUELADDC_8.readFeatures(json_VALENZUELADDC_8, 
+var format_VALEZUELA_8 = new ol.format.GeoJSON();
+var features_VALEZUELA_8 = format_VALEZUELA_8.readFeatures(json_VALEZUELA_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_VALENZUELADDC_8 = new ol.source.Vector({
+var jsonSource_VALEZUELA_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_VALENZUELADDC_8.addFeatures(features_VALENZUELADDC_8);
-var lyr_VALENZUELADDC_8 = new ol.layer.Vector({
+jsonSource_VALEZUELA_8.addFeatures(features_VALEZUELA_8);
+var lyr_VALEZUELA_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_VALENZUELADDC_8, 
-                style: style_VALENZUELADDC_8,
-                popuplayertitle: 'VALENZUELA DDC',
+                source:jsonSource_VALEZUELA_8, 
+                style: style_VALEZUELA_8,
+                popuplayertitle: 'VALEZUELA',
                 interactive: true,
-                title: '<img src="styles/legend/VALENZUELADDC_8.png" /> VALENZUELA DDC'
+                title: '<img src="styles/legend/VALEZUELA_8.png" /> VALEZUELA'
             });
-var format_NAVOTASDDC_9 = new ol.format.GeoJSON();
-var features_NAVOTASDDC_9 = format_NAVOTASDDC_9.readFeatures(json_NAVOTASDDC_9, 
+var format_MALABON_9 = new ol.format.GeoJSON();
+var features_MALABON_9 = format_MALABON_9.readFeatures(json_MALABON_9, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_NAVOTASDDC_9 = new ol.source.Vector({
+var jsonSource_MALABON_9 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_NAVOTASDDC_9.addFeatures(features_NAVOTASDDC_9);
-var lyr_NAVOTASDDC_9 = new ol.layer.Vector({
+jsonSource_MALABON_9.addFeatures(features_MALABON_9);
+var lyr_MALABON_9 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_NAVOTASDDC_9, 
-                style: style_NAVOTASDDC_9,
-                popuplayertitle: 'NAVOTAS DDC',
+                source:jsonSource_MALABON_9, 
+                style: style_MALABON_9,
+                popuplayertitle: 'MALABON',
                 interactive: true,
-                title: '<img src="styles/legend/NAVOTASDDC_9.png" /> NAVOTAS DDC'
+                title: '<img src="styles/legend/MALABON_9.png" /> MALABON'
             });
-var format_MALABONDDC_10 = new ol.format.GeoJSON();
-var features_MALABONDDC_10 = format_MALABONDDC_10.readFeatures(json_MALABONDDC_10, 
+var format_SCALOOCAN_10 = new ol.format.GeoJSON();
+var features_SCALOOCAN_10 = format_SCALOOCAN_10.readFeatures(json_SCALOOCAN_10, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_MALABONDDC_10 = new ol.source.Vector({
+var jsonSource_SCALOOCAN_10 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_MALABONDDC_10.addFeatures(features_MALABONDDC_10);
-var lyr_MALABONDDC_10 = new ol.layer.Vector({
+jsonSource_SCALOOCAN_10.addFeatures(features_SCALOOCAN_10);
+var lyr_SCALOOCAN_10 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_MALABONDDC_10, 
-                style: style_MALABONDDC_10,
-                popuplayertitle: 'MALABON DDC',
+                source:jsonSource_SCALOOCAN_10, 
+                style: style_SCALOOCAN_10,
+                popuplayertitle: 'S CALOOCAN',
                 interactive: true,
-                title: '<img src="styles/legend/MALABONDDC_10.png" /> MALABON DDC'
+                title: '<img src="styles/legend/SCALOOCAN_10.png" /> S CALOOCAN'
             });
-var format_SCALOOCANDDC_11 = new ol.format.GeoJSON();
-var features_SCALOOCANDDC_11 = format_SCALOOCANDDC_11.readFeatures(json_SCALOOCANDDC_11, 
+var format_QUEZONCITY_11 = new ol.format.GeoJSON();
+var features_QUEZONCITY_11 = format_QUEZONCITY_11.readFeatures(json_QUEZONCITY_11, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_SCALOOCANDDC_11 = new ol.source.Vector({
+var jsonSource_QUEZONCITY_11 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_SCALOOCANDDC_11.addFeatures(features_SCALOOCANDDC_11);
-var lyr_SCALOOCANDDC_11 = new ol.layer.Vector({
+jsonSource_QUEZONCITY_11.addFeatures(features_QUEZONCITY_11);
+var lyr_QUEZONCITY_11 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_SCALOOCANDDC_11, 
-                style: style_SCALOOCANDDC_11,
-                popuplayertitle: 'S CALOOCAN DDC',
+                source:jsonSource_QUEZONCITY_11, 
+                style: style_QUEZONCITY_11,
+                popuplayertitle: 'QUEZON CITY',
                 interactive: true,
-                title: '<img src="styles/legend/SCALOOCANDDC_11.png" /> S CALOOCAN DDC'
+                title: '<img src="styles/legend/QUEZONCITY_11.png" /> QUEZON CITY'
             });
-var format_QUEZONCITYDDC_12 = new ol.format.GeoJSON();
-var features_QUEZONCITYDDC_12 = format_QUEZONCITYDDC_12.readFeatures(json_QUEZONCITYDDC_12, 
+var format_PASAY_12 = new ol.format.GeoJSON();
+var features_PASAY_12 = format_PASAY_12.readFeatures(json_PASAY_12, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_QUEZONCITYDDC_12 = new ol.source.Vector({
+var jsonSource_PASAY_12 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_QUEZONCITYDDC_12.addFeatures(features_QUEZONCITYDDC_12);
-var lyr_QUEZONCITYDDC_12 = new ol.layer.Vector({
+jsonSource_PASAY_12.addFeatures(features_PASAY_12);
+var lyr_PASAY_12 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_QUEZONCITYDDC_12, 
-                style: style_QUEZONCITYDDC_12,
-                popuplayertitle: 'QUEZON CITY DDC',
+                source:jsonSource_PASAY_12, 
+                style: style_PASAY_12,
+                popuplayertitle: 'PASAY',
                 interactive: true,
-                title: '<img src="styles/legend/QUEZONCITYDDC_12.png" /> QUEZON CITY DDC'
+                title: '<img src="styles/legend/PASAY_12.png" /> PASAY'
             });
-var format_PASAYSMI_13 = new ol.format.GeoJSON();
-var features_PASAYSMI_13 = format_PASAYSMI_13.readFeatures(json_PASAYSMI_13, 
+var format_MANILA_13 = new ol.format.GeoJSON();
+var features_MANILA_13 = format_MANILA_13.readFeatures(json_MANILA_13, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_PASAYSMI_13 = new ol.source.Vector({
+var jsonSource_MANILA_13 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_PASAYSMI_13.addFeatures(features_PASAYSMI_13);
-var lyr_PASAYSMI_13 = new ol.layer.Vector({
+jsonSource_MANILA_13.addFeatures(features_MANILA_13);
+var lyr_MANILA_13 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_PASAYSMI_13, 
-                style: style_PASAYSMI_13,
-                popuplayertitle: 'PASAY SMI',
+                source:jsonSource_MANILA_13, 
+                style: style_MANILA_13,
+                popuplayertitle: 'MANILA',
                 interactive: true,
-                title: '<img src="styles/legend/PASAYSMI_13.png" /> PASAY SMI'
+                title: '<img src="styles/legend/MANILA_13.png" /> MANILA'
             });
-var format_MANILASMI_14 = new ol.format.GeoJSON();
-var features_MANILASMI_14 = format_MANILASMI_14.readFeatures(json_MANILASMI_14, 
+var format_CREATEFINAL_14 = new ol.format.GeoJSON();
+var features_CREATEFINAL_14 = format_CREATEFINAL_14.readFeatures(json_CREATEFINAL_14, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_MANILASMI_14 = new ol.source.Vector({
+var jsonSource_CREATEFINAL_14 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_MANILASMI_14.addFeatures(features_MANILASMI_14);
-var lyr_MANILASMI_14 = new ol.layer.Vector({
+jsonSource_CREATEFINAL_14.addFeatures(features_CREATEFINAL_14);
+var lyr_CREATEFINAL_14 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_MANILASMI_14, 
-                style: style_MANILASMI_14,
-                popuplayertitle: 'MANILA SMI',
+                source:jsonSource_CREATEFINAL_14, 
+                style: style_CREATEFINAL_14,
+                popuplayertitle: 'CREATE FINAL',
                 interactive: true,
-                title: '<img src="styles/legend/MANILASMI_14.png" /> MANILA SMI'
+                title: '<img src="styles/legend/CREATEFINAL_14.png" /> CREATE FINAL'
             });
-var format_CREATEChannels_15 = new ol.format.GeoJSON();
-var features_CREATEChannels_15 = format_CREATEChannels_15.readFeatures(json_CREATEChannels_15, 
+var format_EXPANDFINAL_15 = new ol.format.GeoJSON();
+var features_EXPANDFINAL_15 = format_EXPANDFINAL_15.readFeatures(json_EXPANDFINAL_15, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_CREATEChannels_15 = new ol.source.Vector({
+var jsonSource_EXPANDFINAL_15 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_CREATEChannels_15.addFeatures(features_CREATEChannels_15);
-var lyr_CREATEChannels_15 = new ol.layer.Vector({
+jsonSource_EXPANDFINAL_15.addFeatures(features_EXPANDFINAL_15);
+var lyr_EXPANDFINAL_15 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_CREATEChannels_15, 
-                style: style_CREATEChannels_15,
-                popuplayertitle: 'CREATE Channels',
+                source:jsonSource_EXPANDFINAL_15, 
+                style: style_EXPANDFINAL_15,
+                popuplayertitle: 'EXPAND FINAL',
                 interactive: true,
-                title: '<img src="styles/legend/CREATEChannels_15.png" /> CREATE Channels'
+                title: '<img src="styles/legend/EXPANDFINAL_15.png" /> EXPAND FINAL'
             });
-var format_EXPANDChannels_16 = new ol.format.GeoJSON();
-var features_EXPANDChannels_16 = format_EXPANDChannels_16.readFeatures(json_EXPANDChannels_16, 
+var format_OPTIMIZEFINAL_16 = new ol.format.GeoJSON();
+var features_OPTIMIZEFINAL_16 = format_OPTIMIZEFINAL_16.readFeatures(json_OPTIMIZEFINAL_16, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_EXPANDChannels_16 = new ol.source.Vector({
+var jsonSource_OPTIMIZEFINAL_16 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_EXPANDChannels_16.addFeatures(features_EXPANDChannels_16);
-var lyr_EXPANDChannels_16 = new ol.layer.Vector({
+jsonSource_OPTIMIZEFINAL_16.addFeatures(features_OPTIMIZEFINAL_16);
+var lyr_OPTIMIZEFINAL_16 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_EXPANDChannels_16, 
-                style: style_EXPANDChannels_16,
-                popuplayertitle: 'EXPAND Channels',
+                source:jsonSource_OPTIMIZEFINAL_16, 
+                style: style_OPTIMIZEFINAL_16,
+                popuplayertitle: 'OPTIMIZE FINAL',
                 interactive: true,
-                title: '<img src="styles/legend/EXPANDChannels_16.png" /> EXPAND Channels'
-            });
-var format_OPTIMIZEChannels_17 = new ol.format.GeoJSON();
-var features_OPTIMIZEChannels_17 = format_OPTIMIZEChannels_17.readFeatures(json_OPTIMIZEChannels_17, 
-            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_OPTIMIZEChannels_17 = new ol.source.Vector({
-    attributions: ' ',
-});
-jsonSource_OPTIMIZEChannels_17.addFeatures(features_OPTIMIZEChannels_17);
-var lyr_OPTIMIZEChannels_17 = new ol.layer.Vector({
-                declutter: false,
-                source:jsonSource_OPTIMIZEChannels_17, 
-                style: style_OPTIMIZEChannels_17,
-                popuplayertitle: 'OPTIMIZE Channels',
-                interactive: true,
-                title: '<img src="styles/legend/OPTIMIZEChannels_17.png" /> OPTIMIZE Channels'
+                title: '<img src="styles/legend/OPTIMIZEFINAL_16.png" /> OPTIMIZE FINAL'
             });
 var group_SOLANEperChannelType = new ol.layer.Group({
-                                layers: [lyr_CREATEChannels_15,lyr_EXPANDChannels_16,lyr_OPTIMIZEChannels_17,],
+                                layers: [lyr_CREATEFINAL_14,lyr_EXPANDFINAL_15,lyr_OPTIMIZEFINAL_16,],
                                 fold: "open",
                                 title: 'SOLANE per Channel Type'});
-var group_SOLANEAllChannelsperDistributorArea = new ol.layer.Group({
-                                layers: [lyr_PATEROSPACI_6,lyr_PASIGPACI_7,lyr_VALENZUELADDC_8,lyr_NAVOTASDDC_9,lyr_MALABONDDC_10,lyr_SCALOOCANDDC_11,lyr_QUEZONCITYDDC_12,lyr_PASAYSMI_13,lyr_MANILASMI_14,],
+var group_SOLANEAllChannelsperDistributor = new ol.layer.Group({
+                                layers: [lyr_PATEROS_6,lyr_PASIG_7,lyr_VALEZUELA_8,lyr_MALABON_9,lyr_SCALOOCAN_10,lyr_QUEZONCITY_11,lyr_PASAY_12,lyr_MANILA_13,],
                                 fold: "open",
-                                title: 'SOLANE All Channels per Distributor Area'});
+                                title: 'SOLANE All Channels per Distributor'});
 var group_SOLANEPhase2GeographicCoverageBoundaries = new ol.layer.Group({
                                 layers: [lyr_SOLANEPhase2CityMunicipalBoundaries_2,lyr_SOLANEPhase2BarangayswPop_3,lyr_SOLANEPhase2Grids_4,],
                                 fold: "open",
                                 title: 'SOLANE Phase 2 Geographic Coverage Boundaries'});
 
-lyr_GoogleSatellite_0.setVisible(true);lyr_OSMStandard_1.setVisible(true);lyr_SOLANEPhase2CityMunicipalBoundaries_2.setVisible(true);lyr_SOLANEPhase2BarangayswPop_3.setVisible(true);lyr_SOLANEPhase2Grids_4.setVisible(true);lyr_SOLANEAllChannelsFinalPh2_5.setVisible(true);lyr_PATEROSPACI_6.setVisible(true);lyr_PASIGPACI_7.setVisible(true);lyr_VALENZUELADDC_8.setVisible(true);lyr_NAVOTASDDC_9.setVisible(true);lyr_MALABONDDC_10.setVisible(true);lyr_SCALOOCANDDC_11.setVisible(true);lyr_QUEZONCITYDDC_12.setVisible(true);lyr_PASAYSMI_13.setVisible(true);lyr_MANILASMI_14.setVisible(true);lyr_CREATEChannels_15.setVisible(true);lyr_EXPANDChannels_16.setVisible(true);lyr_OPTIMIZEChannels_17.setVisible(true);
-var layersList = [lyr_GoogleSatellite_0,lyr_OSMStandard_1,group_SOLANEPhase2GeographicCoverageBoundaries,lyr_SOLANEAllChannelsFinalPh2_5,group_SOLANEAllChannelsperDistributorArea,group_SOLANEperChannelType];
+lyr_GoogleSatellite_0.setVisible(true);lyr_OSMStandard_1.setVisible(true);lyr_SOLANEPhase2CityMunicipalBoundaries_2.setVisible(true);lyr_SOLANEPhase2BarangayswPop_3.setVisible(true);lyr_SOLANEPhase2Grids_4.setVisible(true);lyr_SOLANEAllChannelsFinalPhase2_5.setVisible(true);lyr_PATEROS_6.setVisible(true);lyr_PASIG_7.setVisible(true);lyr_VALEZUELA_8.setVisible(true);lyr_MALABON_9.setVisible(true);lyr_SCALOOCAN_10.setVisible(true);lyr_QUEZONCITY_11.setVisible(true);lyr_PASAY_12.setVisible(true);lyr_MANILA_13.setVisible(true);lyr_CREATEFINAL_14.setVisible(true);lyr_EXPANDFINAL_15.setVisible(true);lyr_OPTIMIZEFINAL_16.setVisible(true);
+var layersList = [lyr_GoogleSatellite_0,lyr_OSMStandard_1,group_SOLANEPhase2GeographicCoverageBoundaries,lyr_SOLANEAllChannelsFinalPhase2_5,group_SOLANEAllChannelsperDistributor,group_SOLANEperChannelType];
 lyr_SOLANEPhase2CityMunicipalBoundaries_2.set('fieldAliases', {'Name': 'Name', });
 lyr_SOLANEPhase2BarangayswPop_3.set('fieldAliases', {'Barangay N': 'Barangay Name', 'Population': 'Population', });
 lyr_SOLANEPhase2Grids_4.set('fieldAliases', {'Name': 'Name', });
-lyr_SOLANEAllChannelsFinalPh2_5.set('fieldAliases', {'_Store / O': 'X_COORD', '_Store /_1': 'Y_COORD', 'Tag No': 'TAG NO', 'Grid No': 'GRID NO', 'House No': 'HOUSE NO', 'Street Nam': 'STREET', 'Barangay': 'BARANGAY', 'City or Mu': 'CITY / MUNICIPALITY', 'Store Name': 'STORE NAME', 'Channel Se': 'CHANNEL SEGMENT', 'Distributo': 'DISTRIBUTOR', 'Owner\'s Na': 'OWNER\'S NAME', 'Contact No': 'CONTACT', 'Contact _1': 'CONTACT 2', 'Interested': 'INTERESTED DEALER', });
-lyr_PATEROSPACI_6.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_PASIGPACI_7.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_VALENZUELADDC_8.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_NAVOTASDDC_9.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_MALABONDDC_10.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_SCALOOCANDDC_11.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_QUEZONCITYDDC_12.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_PASAYSMI_13.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_MANILASMI_14.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_CREATEChannels_15.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_EXPANDChannels_16.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
-lyr_OPTIMIZEChannels_17.set('fieldAliases', {'_Store / O': '_Store / O', '_Store /_1': '_Store /_1', 'Tag No': 'Tag No', 'Grid No': 'Grid No', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Interested': 'Interested', });
+lyr_SOLANEAllChannelsFinalPhase2_5.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'HOUSE NO', 'Street Nam': 'STREET', 'Barangay': 'BARANGAY', 'City or Mu': 'CITY / MUNICIPALITY', 'Store Name': 'STORE NAME', 'Channel Se': 'CHANNEL SEGMENT', 'Distributo': 'DISTRIBUTOR', 'Owner\'s Na': 'OWNER\'S NAME', 'Contact No': 'CONTACT', 'Contact _1': 'CONTACT 2', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'INTERESTED DEALER', 'Remarks': 'Remarks', });
+lyr_PATEROS_6.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_PASIG_7.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_VALEZUELA_8.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_MALABON_9.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_SCALOOCAN_10.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_QUEZONCITY_11.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_PASAY_12.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_MANILA_13.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_CREATEFINAL_14.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_EXPANDFINAL_15.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
+lyr_OPTIMIZEFINAL_16.set('fieldAliases', {'POINT X': 'POINT X', 'POINT Y': 'POINT Y', 'House No': 'House No', 'Street Nam': 'Street Nam', 'Barangay': 'Barangay', 'City or Mu': 'City or Mu', 'Store Name': 'Store Name', 'Channel Se': 'Channel Se', 'Distributo': 'Distributo', 'Owner\'s Na': 'Owner\'s Na', 'Contact No': 'Contact No', 'Contact _1': 'Contact _1', 'Contact _2': 'Contact _2', 'Door Type': 'Door Type', 'Interested': 'Interested', 'Remarks': 'Remarks', });
 lyr_SOLANEPhase2CityMunicipalBoundaries_2.set('fieldImages', {'Name': 'TextEdit', });
 lyr_SOLANEPhase2BarangayswPop_3.set('fieldImages', {'Barangay N': 'TextEdit', 'Population': 'TextEdit', });
 lyr_SOLANEPhase2Grids_4.set('fieldImages', {'Name': 'TextEdit', });
-lyr_SOLANEAllChannelsFinalPh2_5.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_PATEROSPACI_6.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_PASIGPACI_7.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_VALENZUELADDC_8.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_NAVOTASDDC_9.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_MALABONDDC_10.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_SCALOOCANDDC_11.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_QUEZONCITYDDC_12.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_PASAYSMI_13.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_MANILASMI_14.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_CREATEChannels_15.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_EXPANDChannels_16.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
-lyr_OPTIMIZEChannels_17.set('fieldImages', {'_Store / O': 'TextEdit', '_Store /_1': 'TextEdit', 'Tag No': 'TextEdit', 'Grid No': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Interested': 'Range', });
+lyr_SOLANEAllChannelsFinalPhase2_5.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_PATEROS_6.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_PASIG_7.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_VALEZUELA_8.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_MALABON_9.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_SCALOOCAN_10.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_QUEZONCITY_11.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_PASAY_12.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_MANILA_13.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_CREATEFINAL_14.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_EXPANDFINAL_15.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
+lyr_OPTIMIZEFINAL_16.set('fieldImages', {'POINT X': 'TextEdit', 'POINT Y': 'TextEdit', 'House No': 'TextEdit', 'Street Nam': 'TextEdit', 'Barangay': 'TextEdit', 'City or Mu': 'TextEdit', 'Store Name': 'TextEdit', 'Channel Se': 'TextEdit', 'Distributo': 'TextEdit', 'Owner\'s Na': 'TextEdit', 'Contact No': 'TextEdit', 'Contact _1': 'TextEdit', 'Contact _2': 'TextEdit', 'Door Type': 'TextEdit', 'Interested': 'Range', 'Remarks': 'TextEdit', });
 lyr_SOLANEPhase2CityMunicipalBoundaries_2.set('fieldLabels', {'Name': 'no label', });
 lyr_SOLANEPhase2BarangayswPop_3.set('fieldLabels', {'Barangay N': 'no label', 'Population': 'no label', });
 lyr_SOLANEPhase2Grids_4.set('fieldLabels', {'Name': 'header label - visible with data', });
-lyr_SOLANEAllChannelsFinalPh2_5.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_PATEROSPACI_6.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_PASIGPACI_7.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_VALENZUELADDC_8.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_NAVOTASDDC_9.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_MALABONDDC_10.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_SCALOOCANDDC_11.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_QUEZONCITYDDC_12.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_PASAYSMI_13.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_MANILASMI_14.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_CREATEChannels_15.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_EXPANDChannels_16.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_OPTIMIZEChannels_17.set('fieldLabels', {'_Store / O': 'hidden field', '_Store /_1': 'hidden field', 'Tag No': 'no label', 'Grid No': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Interested': 'no label', });
-lyr_OPTIMIZEChannels_17.on('precompose', function(evt) {
+lyr_SOLANEAllChannelsFinalPhase2_5.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_PATEROS_6.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_PASIG_7.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_VALEZUELA_8.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_MALABON_9.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_SCALOOCAN_10.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_QUEZONCITY_11.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_PASAY_12.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_MANILA_13.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_CREATEFINAL_14.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_EXPANDFINAL_15.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_OPTIMIZEFINAL_16.set('fieldLabels', {'POINT X': 'no label', 'POINT Y': 'no label', 'House No': 'no label', 'Street Nam': 'no label', 'Barangay': 'no label', 'City or Mu': 'no label', 'Store Name': 'no label', 'Channel Se': 'no label', 'Distributo': 'no label', 'Owner\'s Na': 'no label', 'Contact No': 'no label', 'Contact _1': 'no label', 'Contact _2': 'no label', 'Door Type': 'no label', 'Interested': 'no label', 'Remarks': 'no label', });
+lyr_OPTIMIZEFINAL_16.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });

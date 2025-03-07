@@ -9,7 +9,7 @@ var map = new ol.Map({
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([13449795.451652, 1631632.687453, 13493443.406544, 1661706.515000], map.getSize());
+map.getView().fit([13447740.424039, 1631621.651494, 13495498.434156, 1662159.532735], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
@@ -891,7 +891,10 @@ attributionList.innerHTML = `
 	<a href="https://openlayers.org/">OpenLayers</a> &middot;
 	<a href="https://qgis.org/">QGIS</a>	
 `;
-bottomAttribution.element.appendChild(attributionList);
+var bottomAttributionUl = bottomAttribution.element.querySelector('ul');
+if (bottomAttributionUl) {
+  bottomAttribution.element.insertBefore(attributionList, bottomAttributionUl);
+}
 
 
 // Disable "popup on hover" or "highlight on hover" if ol-control mouseover
