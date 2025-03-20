@@ -850,7 +850,7 @@ document.getElementsByClassName('gcd-gl-btn')[0].className += ' fa fa-search';
 //layer search
 
 var searchLayer = new SearchLayer({
-    layer: lyr_SOLANEPhase2BarangayswPop_3,
+    layer: lyr_SOLANEPhase2BarangayswPop_2,
     colName: 'Pop',
     zoom: 10,
     collapsed: true,
